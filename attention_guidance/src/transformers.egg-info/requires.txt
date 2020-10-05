@@ -1,0 +1,75 @@
+numpy
+tokenizers==0.7.0
+packaging
+filelock
+requests
+tqdm>=4.27
+regex!=2019.12.17
+sentencepiece
+sacremoses
+
+[:python_version < "3.7"]
+dataclasses
+
+[all]
+pydantic
+uvicorn
+fastapi
+starlette
+tensorflow
+torch
+
+[dev]
+pytest
+pytest-xdist
+timeout-decorator
+psutil
+black
+isort@ git+git://github.com/timothycrosley/isort.git@e63ae06ec7d70b06df9e528357650281a3d3ec22#egg=isort
+flake8
+mecab-python3
+scikit-learn
+tensorflow
+torch
+
+[docs]
+recommonmark
+sphinx
+sphinx-markdown-tables
+sphinx-rtd-theme
+
+[mecab]
+mecab-python3
+
+[quality]
+black
+isort@ git+git://github.com/timothycrosley/isort.git@e63ae06ec7d70b06df9e528357650281a3d3ec22#egg=isort
+flake8
+
+[serving]
+pydantic
+uvicorn
+fastapi
+starlette
+
+[sklearn]
+scikit-learn
+
+[testing]
+pytest
+pytest-xdist
+timeout-decorator
+psutil
+
+[tf]
+tensorflow
+onnxconverter-common@ git+git://github.com/microsoft/onnxconverter-common.git@f64ca15989b6dc95a1f3507ff6e4c395ba12dff5#egg=onnxconverter-common
+keras2onnx@ git+git://github.com/onnx/keras-onnx.git@cbdc75cb950b16db7f0a67be96a278f8d2953b48#egg=keras2onnx
+
+[tf-cpu]
+tensorflow-cpu
+onnxconverter-common@ git+git://github.com/microsoft/onnxconverter-common.git@f64ca15989b6dc95a1f3507ff6e4c395ba12dff5#egg=onnxconverter-common
+keras2onnx@ git+git://github.com/onnx/keras-onnx.git@cbdc75cb950b16db7f0a67be96a278f8d2953b48#egg=keras2onnx
+
+[torch]
+torch
