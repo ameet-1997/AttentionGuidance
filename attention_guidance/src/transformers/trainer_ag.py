@@ -672,6 +672,10 @@ class TrainerAG:
         for k, v in inputs.items():
             inputs[k] = v.to(self.args.device)
 
+        # Output attentions if AG loss is being used
+        if self.args.ag:
+            inputs['output_attentions'] = True            
+
         outputs = model(**inputs)
         mlm_loss = outputs[0]  # model outputs are always tuple in transformers (see doc)
 
