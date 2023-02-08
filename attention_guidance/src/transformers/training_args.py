@@ -146,7 +146,7 @@ class TrainingArguments:
     )
     attn_head_types: str = field(
         default='0,1,1,4',
-        metadata={"help": "Numbers of each type of attention heads (SAME,NEXT,PREV,CLS,DELIM,DELIM)"},
+        metadata={"help": "Numbers of each type of attention heads (one-to-one, next, previous, first)"},
     )
     scale: float = field(default=10.0, metadata={"help": "The relative weight to be applied to the AG loss"})    
 
